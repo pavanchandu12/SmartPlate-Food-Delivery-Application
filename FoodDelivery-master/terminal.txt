@@ -1,0 +1,55 @@
+backend spingboot
+    cd "Online-Food-Delivery-App-System-main/online-food-multivendor-backend-master (1)/online-food-multivendor-backend-master"
+    mvn spring-boot:run
+
+frontend
+    cd "Online-Food-Delivery-App-System-main/online-food-multivendor-frontend-master (1)/online-food-multivendor-frontend-master"
+    npm install
+    npm start
+
+customer
+pragnanmu812@email.com
+pragnan
+
+restaurant
+pavan@gmail.com
+pavan
+
+admin
+admin@admin.com
+123456
+
+Delivery boy
+krishna@gmail.com
+krishna
+
+archtecture used 
+MVC Architecture Pattern
+
+model User.java(src\main\java\com\onlinefood\entity\User.java), 
+Food.java, 
+Orders.java
+
+Dependency Injection Pattern
+UserController.java (lines 26-27) where UserResource is injected
+
+Singleton Pattern--pavan
+UserServiceImpl.java with @Service annotation+
+Spring container ensures single instances of object(bean) like services and controllers
+
+Factory Pattern --pragnan
+The passwordEncoder() method in SecurityConfig.java creates and returns a BCryptPasswordEncoder
+PasswordEncoder interface is already defined in the Spring Security framework, and you just import and use it
+Factory Method is a creational design pattern that provides an interface for creating
+objects in a superclass, but allows subclasses to alter the type of objects that will
+be created.
+
+
+Facade Pattern--krishna
+UserResource.java, FoodResource.java, OrderResource.java
+Simplifies interactions between controllers and multiple services
+
+Builder Pattern--mahendra
+online-food-multivendor-backend-master\src\main\java\com\onlinefood\exception\GlobalExceptionHandler.java
+Building response objects with method chaining in exception handling
+The Builder Design Pattern is another creational pattern designed to deal with the construction of comparatively complex objects.
